@@ -6,7 +6,7 @@ mutexList: A linked list containing all the created mutexes.<br>
 blockList: A linked list containing threads that are blocked because they tried accessing mutexed code without owning the mutex.<br>
 finishedList: A linked list containing finished threads with values to return.<br><br>
 
-Timers<br>
+## Timers
 noInterrupt: An integer variable that gets set to 1 when handleTimer() shouldn't switch the thread, and set to 0 when handleTimer() can switch the thread.<br>
 handleTimerFailed: An integer variable that gets set to 1 when handleTimer() couldn't switch the thread the last time it was called. 0 otherwise.<br>
 handleTimer(): A function that handles the timer signal. If noInterrupt is set, then handleTimer() sets handleTimerFailed to 1. If noInterrupt is not set, handleTimer() switches the context to the scheduleThread.<br>
